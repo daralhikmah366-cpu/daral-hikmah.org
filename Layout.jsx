@@ -20,11 +20,8 @@ export default function Layout({ children, currentPageName }) {
   const navigationItems = [
     { title: "Home", url: "/", icon: Home },
     { title: "About", url: "/about", icon: Info },
-    { title: "Programs", url: "/programs", icon: BookOpen },
-    { title: "Events", url: "/events", icon: Calendar },
-    { title: "Donate", url: "/donate", icon: Heart },
-    { title: "Articles", url: "/articles", icon: Newspaper },
     { title: "Contact", url: "/contact", icon: Phone },
+    { title: "Donate", url: "/donate", icon: Heart },
   ];
 
   return (
@@ -145,9 +142,8 @@ export default function Layout({ children, currentPageName }) {
             <div>
               <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
               <ul className="space-y-2 text-sm">
-                <li><Link to="/programs" className="text-gray-300 hover:text-[#B8860B] transition-colors">Islamic Programs</Link></li>
-                <li><Link to="/events" className="text-gray-300 hover:text-[#B8860B] transition-colors">Community Events</Link></li>
-                <li><Link to="/articles" className="text-gray-300 hover:text-[#B8860B] transition-colors">Articles & Resources</Link></li>
+                <li><Link to="/about" className="text-gray-300 hover:text-[#B8860B] transition-colors">About Us</Link></li>
+                <li><Link to="/contact" className="text-gray-300 hover:text-[#B8860B] transition-colors">Contact Us</Link></li>
                 <li><Link to="/donate" className="text-gray-300 hover:text-[#B8860B] transition-colors">Support Our Mission</Link></li>
               </ul>
             </div>
@@ -156,9 +152,19 @@ export default function Layout({ children, currentPageName }) {
             <div>
               <h4 className="text-lg font-semibold mb-4">Get in Touch</h4>
               <div className="space-y-2 text-sm text-gray-300">
-                <p>📧 info@daralhikma.org</p>
-                <p>📞 +1 (555) 123-4567</p>
-                <p>📍 123 Islamic Center Dr.<br />Community City, ST 12345</p>
+                <p>📧 Admin@daral-hikmah.org</p>
+                <p>📞 +1 (347) 335-7447</p>
+                <p>📍 2929 Spotted Fawn Dr<br />Fort Worth, TX 76108</p>
+                <div className="mt-4">
+                  <a
+                    href="https://www.facebook.com/daralhikmafondation?mibextid=ZbWKwL"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-300 hover:text-[#B8860B] transition-colors"
+                  >
+                    📘 Follow us on Facebook
+                  </a>
+                </div>
               </div>
             </div>
           </div>
