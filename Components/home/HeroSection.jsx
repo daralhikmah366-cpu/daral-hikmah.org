@@ -33,16 +33,16 @@ export default function HeroSection() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Link to="/programs">
+            <Link to="/contact">
               <Button className="bg-[#B8860B] hover:bg-[#A17509] text-white px-8 py-4 text-lg">
-                <BookOpen className="w-5 h-5 mr-2" />
-                Explore Programs
+                <Users className="w-5 h-5 mr-2" />
+                Contact Us
               </Button>
             </Link>
-            <Link to="/events">
+            <Link to="/about">
               <Button variant="outline" className="border-white text-white hover:bg-white hover:text-[#1F5B5A] px-8 py-4 text-lg">
-                <Users className="w-5 h-5 mr-2" />
-                Community Events
+                <BookOpen className="w-5 h-5 mr-2" />
+                Learn More
               </Button>
             </Link>
           </div>
